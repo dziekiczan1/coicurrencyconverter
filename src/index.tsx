@@ -1,23 +1,29 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./index.css";
-import store from "./app/store";
 import { Provider } from "react-redux";
+import store from "./app/store";
+
 import App from "./App";
+import "./index.css";
 import History from "./components/History";
+import Converter from "./components/Converter";
+import Logo from "./assets/logo.png";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Provider store={store}>
         <div className="app">
+          <img src={Logo} alt="COI" className="app__logo" />
           <div className="app__container">
             <Routes>
               <Route path="/" element={<App />} />
+              <Route path="/converter" element={<Converter />} />
               <Route path="/history" element={<History />} />
             </Routes>
           </div>
