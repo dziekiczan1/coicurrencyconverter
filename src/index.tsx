@@ -8,7 +8,6 @@ import App from "./App";
 import "./index.css";
 import History from "./components/History";
 import Converter from "./components/Converter";
-import Logo from "./assets/logo.png";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -19,7 +18,6 @@ root.render(
     <BrowserRouter>
       <Provider store={store}>
         <div className="app">
-          <img src={Logo} alt="COI" className="app__logo" />
           <div className="app__container">
             <Routes>
               <Route path="/" element={<App />} />
