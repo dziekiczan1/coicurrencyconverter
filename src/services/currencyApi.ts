@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 const currencyApiHeaders = {
-  "X-RapidAPI-Key": "7b0c9cae31mshb601f16fabe16fap15578ejsn153bb01c85b6",
+  "X-RapidAPI-Key": process.env.REACT_APP_KEY,
   "X-RapidAPI-Host": "currency-converter-pro1.p.rapidapi.com",
 };
 
