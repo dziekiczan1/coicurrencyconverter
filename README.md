@@ -2,7 +2,7 @@
 
 ### [Live Site](https://currencyconvcoi.netlify.app/)
 
-![Currency Converter](https://piotr.rzadkowolski.dev/assets/proj12.wbp)
+![Currency Converter](https://piotr.rzadkowolski.dev/assets/proj12.webp)
 
 ## Introduction
 This is a code repository for the **Currency Converter** app. 
